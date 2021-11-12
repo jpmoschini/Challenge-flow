@@ -1,0 +1,26 @@
+.homepage-wrapper {
+  width: 70vw;
+  height: 90vh;
+  background-color: #1c4774;
+  text-align: center;
+  border-radius: 15px;
+  padding-top: 5px;
+  margin-top: 20px;
+}
+
+.title {
+  color: #f8f6f2;
+}
+
+@media (max-width: 920px) {
+  .homepage-wrapper {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .homepage-wrapper {
+    width: 100vw;
+    height: 95vh;
+  }
+}
