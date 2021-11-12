@@ -6,7 +6,7 @@ const Homepage = () => {
     //const [weather, setweather] = useState([]);
     /*     var lat = 0;
         var lon = 0; */
-    const apiKey = "5ddbecd03522842ff5dee5cc65533265";
+    const apiKey = "****";
 
     //For Geolocation
     /*     var options = {
