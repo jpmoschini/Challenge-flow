@@ -1,9 +1,12 @@
 import './App.css';
 import Homepage from './components/Homepage/Homepage';
+import CityState from './context/cityState';
 
 function App() {
   return (
-    <Homepage />
+    <CityState>
+      <Homepage />
+    </CityState>
   );
 }
 
