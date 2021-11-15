@@ -6,13 +6,13 @@ import CurrentCity from '../CurrentCity/CurrentCity';
 
 const Homepage = () => {
     return (
-        <>
+        <div >
             <Header />
-            <div className=" box">
+            <div className=" container-sm box-homepage">
                 <Cities />
                 <CurrentCity />
             </div>
-        </>
+        </div>
     );
 };
 

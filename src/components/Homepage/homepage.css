@@ -1,12 +1,17 @@
-.box {
-  margin: 0 auto;
+.box-homepage {
   border-radius: var(--main-border-radius);
   -webkit-box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
   background-color: var(--bg-color--card);
   color: var(--main-text-color);
-  width: 90vh;
-  height: 75vh;
-  max-width: 675px;
+  max-width: 675px !important;
   min-height: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 680px) {
+  .box-homepage {
+    border-radius: 0px !important;
+  }
 }

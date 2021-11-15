@@ -8,7 +8,6 @@ const CityState = (props) => {
         cities: [
             ...cities
         ],
-        isLoading: false,
         currentCity: null,
     }
     const [state, dispatch] = useReducer(cityReducer, initialState)

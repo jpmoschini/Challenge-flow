@@ -15,7 +15,15 @@ const CurrentDay = () => {
     return (
 
         <div className="row justify-content">
-            <div className="col-md-auto">
+            <div className="col-6 city-name">
+                <h1>
+                    {currentCity.cityName}
+                </h1>
+                <h3>
+                    {formattedDate}
+                </h3>
+            </div>
+            <div className="col-6 icon">
                 <img className="mb-2" width="100" src={`${imgUrlBase}${currentCity.current.weather[0].icon}@2x.png`} alt="weather icon" />
                 <p>
                     {currentCity.current.temp}ºC
@@ -23,14 +31,6 @@ const CurrentDay = () => {
                 <p>
                     {currentCity.current.weather[0].description}
                 </p>
-            </div>
-            <div className="col-md-auto">
-                <h1>
-                    {currentCity.cityName}
-                </h1>
-                <h3>
-                    {formattedDate}
-                </h3>
             </div>
         </div>
     );

@@ -1,0 +1,9 @@
+.city-name {
+  padding-top: 20px;
+  text-align: right;
+}
+p,
+h1,
+h3::first-letter {
+  text-transform: capitalize;
+}

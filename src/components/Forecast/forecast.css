@@ -1,0 +1,7 @@
+.forecast-item {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-color--card);
+  color: var(--main-text-color);
+}
