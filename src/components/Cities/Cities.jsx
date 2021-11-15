@@ -1,28 +1,41 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { cityContext } from '../../context/cityContext';
+import useGeoLocation from '../../hooks/useGeoLocation';
 import "./cities.css";
 
-const Cities = (props) => {
+const Cities = () => {
+    const { cities, getSelectedLocation } = useContext(cityContext);
+    const location = useGeoLocation();
 
+    const handleLocation = (city) => {
+        const { lat, lon } = city;
+        getSelectedLocation(lat, lon)
+    }
+
+    const handleUserLocation = () => {
+        const { lat, lon } = location.coordinates;
+        getSelectedLocation(lat, lon)
+    }
 
     return (
         <div className="cities-container">
-            <ul className="nav nav-pills nav-fill">
+
+            <ul className="nav nav-pils nav-fill">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">props.city.name</a>
+                    <button type="button" className="btn btn-light" onClick={() => handleUserLocation()} > Your Location </button>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/">Mar del Plata</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/">Buenos Aires</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/">Rosario</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/">Córdoba</a>
-                </li>
-            </ul>        </div>
+                {cities.map((city, index) => {
+                    return (
+                        <li className="nav-item" key={city.id}>
+                            <button type="button" className="btn btn-light" onClick={() => handleLocation(city)}> {city.name} </button>
+                        </li>
+                    )
+                })}
+            </ul>
+
+        </div>
+
+
     );
 };
 
