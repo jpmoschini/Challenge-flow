@@ -26,7 +26,7 @@ const CurrentDay = () => {
             <div className="col-6 icon">
                 <img className="mb-2" width="100" src={`${imgUrlBase}${currentCity.current.weather[0].icon}@2x.png`} alt="weather icon" />
                 <p>
-                    {currentCity.current.temp}ºC
+                    {parseInt(currentCity.current.temp)}ºC
                 </p>
                 <p>
                     {currentCity.current.weather[0].description}

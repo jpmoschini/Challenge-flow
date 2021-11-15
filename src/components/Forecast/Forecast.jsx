@@ -16,7 +16,6 @@ const Forecast = () => {
 
     }
 
-
     return (
         <div className="row justify-content-md-center forecast-group">
             {
@@ -24,8 +23,8 @@ const Forecast = () => {
                     return <div className="col-md-auto col-4 forecast-item" key={index}>
                         <img className="mb-2" width="50" src={`${imgUrlBase}${day.weather[0].icon}@2x.png`} alt="weather icon" />
                         <p>{showDay(currentCity, day)}</p>
-                        <p>Max: {day.temp.max}ºC</p>
-                        <p>Min: {day.temp.min}ºC</p>
+                        <p>Max: {parseInt(day.temp.max)}ºC</p>
+                        <p>Min: {parseInt(day.temp.min)}ºC</p>
                     </div>
                 })
             }

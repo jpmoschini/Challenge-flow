@@ -7,7 +7,7 @@ export const cities = [
     },
     {
         id: 1,
-        name: "Paris",
+        name: "París",
         lat: 48.85341,
         lon: 2.3488,
     },

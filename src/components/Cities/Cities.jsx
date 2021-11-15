@@ -22,7 +22,7 @@ const Cities = () => {
 
             <ul className="nav nav-pils nav-fill">
                 <li className="nav-item">
-                    <button type="button" className="btn btn-light" onClick={() => handleUserLocation()} > Your Location </button>
+                    <button type="button" className="btn btn-light" onClick={() => handleUserLocation()} > Su Ubicación </button>
                 </li>
                 {cities.map((city, index) => {
                     return (
