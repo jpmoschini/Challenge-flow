@@ -21,7 +21,7 @@ const CurrentCity = () => {
                         </div>
                     </> :
                     <div className="select">
-                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" />
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" />
                         <h2>Please Select a City</h2>
                     </div>
             }

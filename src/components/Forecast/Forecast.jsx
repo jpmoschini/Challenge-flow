@@ -7,7 +7,7 @@ import "./forecast.css";
 
 const Forecast = () => {
     const { currentCity } = useContext(cityContext);
-    const imgUrlBase = "http://openweathermap.org/img/wn/";
+    const imgUrlBase = "https://openweathermap.org/img/wn/";
 
     const showDay = (current, day) => {
         const localDate = new Date((day.dt + (3600 * 3) + current.timezone_offset))

@@ -6,7 +6,7 @@ import "./currentDay.css";
 
 const CurrentDay = () => {
     const { currentCity } = useContext(cityContext);
-    const imgUrlBase = "http://openweathermap.org/img/wn/";
+    const imgUrlBase = "https://openweathermap.org/img/wn/";
 
     const localDate = new Date((currentCity.current.dt + (3600 * 3) + currentCity.timezone_offset))
     moment.locale('es');
